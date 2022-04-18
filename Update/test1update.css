@@ -1,0 +1,178 @@
+body {
+    background: #231f20;
+    color: #dfbe6a;
+}
+
+#div_1 {
+    display: flex;
+    justify-content: center;
+}
+
+#div1 {
+    display: inline-block;
+    border: 1px solid #dfbe6a;
+    background: transparent;
+    font-size: 0.7rem;
+    font-style: normal;
+    letter-spacing: 0.1em;
+    color: #dfbe6a;
+    transition: all 0.5s ease-out;
+    padding: 15px 80px 15px;
+    margin-top: 15px;
+}
+
+#div1:hover {
+    color: azure;
+    border: 1px solid #231f20;
+    background-color: #dfbe6a;
+}
+
+#section1 {
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+}
+
+#div2-1 {
+    border: 1px solid #dfbe6a;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px;
+}
+
+#div2-2 {
+    border: 1px solid #dfbe6a;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px;
+}
+
+#div2-3 {
+    border: 1px solid #dfbe6a;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px;
+}
+
+#div2-4 {
+    border: 1px solid #dfbe6a;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px;
+}
+
+#div2-9 {
+    border: 1px solid #dfbe6a;
+    text-align: center;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding: 15px;
+}
+
+hr {
+    border-style: dotted;
+    border-color: #dfbe6a;
+}
+
+#div_3 {
+    display: flex;
+    justify-content: center;
+}
+
+#div3-1 {
+    border: 1px solid #dfbe6a;
+    margin: 0 auto;
+    padding: 10px 25px 10px 5px;
+}
+
+#div3-2 {
+    border: 1px solid #dfbe6a;
+    margin: 0 auto;
+    padding: 10px 25px 10px 5px;
+}
+
+#div_4 {
+    display: flex;
+    margin: 15px;
+    justify-content: center;
+}
+
+#div4-1 {
+    border: 1px solid #dfbe6a;
+    margin: 5px;
+}
+
+#div4-1>a:link {
+    text-decoration-line: none;
+    color: #dfbe6a;
+}
+
+#div4-1>a:visited {
+    color: green;
+}
+
+#div4-1>a:active {
+    color: gray;
+}
+
+#div4-1>a:hover {
+    color: yellowgreen;
+}
+
+#div4-2 {
+    border: 1px solid #dfbe6a;
+    margin: 5px;
+}
+
+#div4-2>a:link {
+    text-decoration-line: none;
+    color: #dfbe6a;
+}
+
+#div4-2>a:visited {
+    color: azure;
+}
+
+#div4-2>a:active {
+    color: gray;
+}
+
+#div4-2>a:hover {
+    animation-duration: 3s;
+    animation-name: rainbowLink;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rainbowLink {
+    0% {
+        color: #ff2a2a;
+    }
+
+    15% {
+        color: #ff7a2a;
+    }
+
+    30% {
+        color: #ffc52a;
+    }
+
+    45% {
+        color: #43ff2a;
+    }
+
+    60% {
+        color: #2a89ff;
+    }
+
+    75% {
+        color: #202082;
+    }
+
+    90% {
+        color: #6b2aff;
+    }
+
+    100% {
+        color: #e82aff;
+    }
+}
