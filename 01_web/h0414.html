@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework 20220414</title>
+</head>
+
+<body>
+    <h1>2022년 4월 13일 수업 배운 내용 요약 정리</h1>
+    <h3>● Request & Response</h3>
+    <ul>
+        <li>
+            헤더필드 - 서버와의 통신에 필요한 여러 가지 정보를 표현
+        </li>
+    </ul>
+    <h4>Request Header > Request-line</h4>
+    <p>method / url(URI) / protocol ver</p>
+    <ul>
+        <li>
+            3개의 필드로 구성
+        </li>
+        <li>
+            각 필드의 구분자는 sp(공백)
+        </li>
+    </ul>
+    <h4>Response Header > Response-line</h4>
+    <p>protocol ver / status code / status string</p>
+    <ul>
+        <li>
+            클라이언트의 요청에 대한 처리 결과
+        </li>
+        <li>
+            위와 같이 3개의 필드로 구성함
+        </li>
+    </ul>
+    <h4>개발자 도구 방법?</h4>
+    <p>
+        1. 크롬에서 오른쪽 위 점 3개 아이콘을 클릭 (F12)<br>
+        2. Network 탭 이동<br>
+        3. F5 또는 Ctrl+R 페이지 새로고침<br>
+        4. name에 페이지 요청 목록 클릭<br>
+        5. Header 탭 클릭 - 헤더 정보 확인<br>
+        6. Response 정보도 확인
+    <ul>
+        <li>
+            Get - 오픈된 상태
+        </li>
+        <li>
+            POST - 숨겨진 것
+        </li>
+    </ul>
+    </p>
+    <h4>응답상태 코드?</h4>
+    <ul>
+        <li>
+            1XX : 요청 받았음, 작업 진행 중
+        </li>
+        <li>
+            2XX : 서버가 요청을 수락했음
+        </li>
+        <li>
+            3XX : 요청에 문제 없음, 요청에 대한 선택 처리<br>
+            ※ 301, 302는 리디렉션(Redirection) 관련
+        </li>
+        <li>
+            4XX : 클라이언트 요청 오류<br>
+            ※ 400 : Bad Request : 오탈자, 없는 리소스<br>
+            ※ 401 Unauthorized, 403 Forbidden<br>
+            ※ 404 Not Found : 리소스를 찾을 수 없음
+        </li>
+        <li>
+            5XX : 서버 에러
+        </li>
+    </ul>
+
+    <h4>프론트 엔드 / 백 엔드?</h4>
+    <p>프론트 엔드 : 사용자가 볼 수 있는 화면, 즉 사용자 인터페이스(User Interface, UI)를 일컫음</p>
+    <p>백 엔드 : 웹 애플리케이션의 사용자가 보지 못하는 영역인 서버나 데이터베이스를 관리하는 기술</p>
+
+    <h4>브라우저의 렌더링 과정</h4>
+
+    <img width="480" height="360"
+        src="https://radial-risk-2bf.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fcde37c39-abd7-4de6-b044-51b6e223edd6%2FUntitled.png?table=block&id=ab6c4258-d153-4b7b-9c76-fe2660562f76&spaceId=d1a988f4-e527-4f37-84f2-5cf57ae3d75a&width=2000&userId=&cache=v2">
+
+    <h4>HTML, CSS, JavaScript</h4>
+
+    <img width="640" height="360"
+        src="https://radial-risk-2bf.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F242e4a1e-b1d4-4139-90f7-b65ca75ef163%2FUntitled.png?table=block&id=bc376242-d08b-4ad8-b0e8-f0db48b8cd49&spaceId=d1a988f4-e527-4f37-84f2-5cf57ae3d75a&width=2000&userId=&cache=v2">
+
+    <p>웹 페이지 구성 3요소</p>
+    <ul>
+        <li>
+            웹 페이지의 구조와 내용 - HTML
+        </li>
+        <li>
+            웹 페이지의 모양 - CSS(Cascading Style Sheet)
+        </li>
+        <li>
+            웹 페이지의 행동 및 응용 프로그램 - Javascript
+        </li>
+    </ul>
+
+    <h3>HTML</h3>
+    <p>▶ HTML(Hyper-Text Markup Language)</p>
+    <ul>
+        <li>
+            하이퍼-텍스트로 이루어진 소스 코드
+        </li>
+    </ul>
+</body>
+
+</html>
