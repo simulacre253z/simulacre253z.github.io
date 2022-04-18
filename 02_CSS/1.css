@@ -1,0 +1,47 @@
+h5 {
+    color: blueviolet;
+    text-align: right;
+    font-style: italic;
+}
+
+h6 {
+    color: blanchedalmond;
+    font-size: 24px;
+}
+
+#p1 {
+    color: palevioletred;
+}
+
+.class1 {
+    font-size: 30px;
+}
+
+.class2 {
+    color: rgb(145, 145, 0);
+    font-style: italic;
+}
+
+#div2 > p {
+    font-size: 20px;
+}
+
+#네이버 {
+    color : greenyellow;
+    text-decoration: none
+}
+
+input[placeholder ~= 'an']{
+    background-color: violet;
+}
+
+#네이버:hover {
+    color : green;
+    text-decoration: underline;
+}
+
+#구글:hover {
+    text-shadow: purple 1px 2px 3px;
+    border-radius: 5px;
+    background-color: plum;
+}

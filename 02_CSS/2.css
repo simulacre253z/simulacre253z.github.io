@@ -1,0 +1,53 @@
+#div1 {
+    border: 5px dashed black;
+    width: 300px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 24px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#div2 {
+    border: 0.5px dashed black;
+    width: 450px;
+    height: 550px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#div3 {
+    border: 3px dashed blue;
+    width: 500px;
+    height: 72px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    color: gray;
+}
+
+ol.a {
+    list-style-type: none;
+}
+
+ul>.li1 {
+    color: red;
+}
+
+ul>.li2 {
+    color: green;
+}
+
+ul>.li3 {
+    color: blue;
+}
+
+p[text |='test'] {
+    background-color: yellow;
+}
