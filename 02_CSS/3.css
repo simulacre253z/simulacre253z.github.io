@@ -33,6 +33,11 @@ div>a:hover {
     font-size: 36px;
 }
 
+#container {
+    border: 1px solid paleturquoise;
+    background-color: paleturquoise;
+}
+
 div>img {
     margin: 15px;
     transition: all 0.1s linear;
@@ -53,11 +58,6 @@ div>img:hover {
     -ms-transform: scale(1.05);
     -o-transform: scale(1.05);
     transform: scale(1.05);
-}
-
-#container {
-    border: 1px solid paleturquoise;
-    background-color: paleturquoise;
 }
 
 #footer {
