@@ -9,6 +9,7 @@ div {
 }
 
 #header {
+    display: grid;
     border: 1px solid palegreen;
     background-color: palegreen;
 }
@@ -34,6 +35,7 @@ div>a:hover {
 }
 
 #container {
+    display: block;
     border: 1px solid paleturquoise;
     background-color: paleturquoise;
 }
