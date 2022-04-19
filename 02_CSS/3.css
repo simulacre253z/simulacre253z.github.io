@@ -17,10 +17,6 @@ div {
     transition: all 0.5s linear;
 }
 
-#header>a:hover {
-    background-color: palegoldenrod;
-}
-
 div>a {
     color: cadetblue;
     background-color: rgb(180, 255, 180);
@@ -32,6 +28,8 @@ div>a {
 }
 
 div>a:hover {
+    background-color: palegoldenrod;
+    transition: all 0.5s linear;
     font-size: 36px;
 }
 
