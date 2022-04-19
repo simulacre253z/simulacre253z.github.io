@@ -1,0 +1,69 @@
+body {
+    margin: 0 auto;
+}
+
+div {
+    text-align: center;
+    padding: 30px;
+    margin: 10px 480px;
+}
+
+#header {
+    border: 1px solid palegreen;
+    background-color: palegreen;
+}
+
+#header>a {
+    transition: all 0.5s linear;
+}
+
+#header>a:hover {
+    background-color: palegoldenrod;
+
+}
+
+div>a {
+    color: cadetblue;
+    background-color: rgb(180, 255, 180);
+    text-decoration: none;
+    font-style: normal;
+    font-size: 24px;
+    text-shadow: 1px 1px 5px;
+    padding: 10px;
+}
+
+div>a:hover {
+    font-size: 36px;
+}
+
+div>img {
+    margin: 15px;
+    transition: all 0.1s linear;
+    border: 1px solid cadetblue;
+}
+
+.b {
+    margin-left: 400px;
+}
+
+.c {
+    margin-right: 480px;
+}
+
+div>img:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+#container {
+    border: 1px solid paleturquoise;
+    background-color: paleturquoise;
+}
+
+#footer {
+    border: 1px solid palevioletred;
+    background-color: palevioletred;
+}
