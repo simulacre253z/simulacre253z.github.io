@@ -1,0 +1,90 @@
+body {
+    margin: 0 auto;
+}
+
+#header {
+    position: static;
+    display: block;
+    text-align: center;
+    margin: 70px 0px 30px 0px;
+}
+
+#header>a {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 30px;
+    padding: 20px;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.5s ease-out;
+    -webkit-animation: fadein 5s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#header>a:link {
+    color: yellowgreen;
+}
+
+#header>a:visited {
+    color: yellowgreen;
+}
+
+#header>a:hover {
+    color: white;
+    background-color: yellowgreen;
+}
+
+#container {
+    position: static;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    display: block;
+    margin: 50px;
+    transition: all 1s;
+}
+
+img:hover {
+    background-color: yellowgreen;
+    transform: scale(1.1);
+    filter: brightness(75%);
+}
+
+figcaption {
+    position: static;
+    text-align: center;
+    font-size: 24px;
+}
+
+#footer {
+    position: static;
+    display: block;
+    text-align: center;
+    margin: 50px 720px 0px 720px;
+}
+
+#footer>p {
+    font-style: normal;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium';
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    transition: all 1s ease-in-out;
+}
+
+#footer>p:hover {
+    background-color: yellowgreen;
+}
