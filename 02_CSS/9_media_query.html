@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9mediaquery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* 전체 부분 담당 */
+        body {
+            font-family: 'Gill Sans';
+            margin: 0;
+            color: white;
+        }
+
+        /* 헤더 및 로고 부분 담당*/
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: #ff3c3c;
+            color: white;
+        }
+
+        /* 내비게이션 바 */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(33, 33, 33);
+            font-weight: bold;
+        }
+
+        /* 내비게이션 바 메뉴 */
+        .navbar a {
+            color: #ffffff;
+            margin: 20px;
+            padding: 10px 10px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        /* 내비게이션 바 메뉴 호버 */
+        .navbar a:hover {
+            background-color: white;
+            color: #ff5050;
+        }
+
+        /* 컨테이너 정렬 설정 */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* 좌단 바 설정 */
+        .side {
+            flex: 15%;
+            background-color: #ff5050;
+            padding: 20px;
+        }
+
+        /* 메인 설정 */
+        .main {
+            flex: 70%;
+            background-color: rgb(255, 100, 100);
+            padding: 20px;
+        }
+
+        /* 이미지 대체 */
+        .img {
+            text-align: center;
+            background-color: rgb(255, 130, 130);
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* 푸터 부분 담당 */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: rgb(33, 33, 33);
+        }
+
+        /* 모바일 화면으로 최적화 */
+        @media screen and (max-width: 768px) {
+
+            .row,
+            .navbar {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <div class="header">
+        <h1>simulacre253z's Diary</h1>
+        <p>9mediaquery</p>
+    </div>
+
+    <!-- 내비게이션 바 -->
+    <div class="navbar">
+        <a href="#">메뉴1</a>
+        <a href="#">메뉴2</a>
+        <a href="#">메뉴3</a>
+        <a href="#">메뉴4</a>
+    </div>
+
+    <!-- div 구성 -->
+    <div class="row">
+        <div class="side">
+            <h2>Simulacre</h2>
+            <h3>프로필</h3>
+            <div class="img" style="height:200px;">img</div>
+            <p>안녕하세요. 당신의 친절한 이웃, Simulacre입니다. :3</p>
+            <h3>취미</h3>
+            <div class="img" style="height:60px;">img</div><br>
+            <div class="img" style="height:60px;">img</div><br>
+            <div class="img" style="height:60px;">img</div>
+        </div>
+        <div class="main">
+            <h2>오늘의 일기</h2>
+            <h3>오늘은 3시간만 자고 버티는 중</h3>
+            <div class="img" style="height:200px;">img</div>
+            <p>정신적으로 육체적으로 힘들지만 재밌어요. :)</p>
+            <p>어제 민호 형이 차로 데려다 준 덕분에 평소보다 일찍 운동하고 공부할 수 있었으나 다른 할 일로 바빠진 탓에 잠 제대로 못 잤습니다만, 오늘도 열심히 살아가자 라는 마인드로
+                잘 지내고 있습니다.</p>
+            <br>
+            <h2>2022년 4월 20일</h2>
+            <h3>장애인의 날 그리고 맘스터치 햄버거</h3>
+            <div class="img" style="height:200px;">img</div>
+            <p>치즈홀릭버거 (에멘탈) 어마무시한 사이즈에 놀랐어요. ㅇ0ㅇ</p>
+            <p>그래도 안지아 선생님께서 특별히 신경 써주신 덕분에 정말로 맛있게 잘 먹었습니다. 더불어 원래 제일 좋아하는 햄버거 브랜드가 맘스터치여서 의미 있었고 항상 감사합니다. (^~^)</p>
+        </div>
+    </div>
+
+    <!-- 푸터 -->
+    <div class="footer">
+        <h2>simulacre253z@gmail.com</h2>
+    </div>
+
+</body>
+
+</html>
