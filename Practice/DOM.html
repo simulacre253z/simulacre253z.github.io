@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .fts {
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="one" class="jjang" style="border: 5px solid pink">짱구는</div>
+    <div id="two" class="jjang" style="border: 5px solid plum">못말려</div>
+    <br>
+    <button onclick="buttonChg()">마커 체인지</button>
+    <ul class="fts" style="color: grey">
+        <li id="1"><a href="https://www.google.co.kr/" target="_blank">구글</a></li>
+        <li id="2"><a href="https://www.naver.com/" target="_blank">네이버</a></li>
+        <li id="3"><a href="https://www.daum.net/" target="_blank">다음</a></li>
+    </ul>
+    <button onclick="fontChg()">폰트 체인지</button>
+    <script>
+        // document.getElementById('one').innerHTML = '흰둥이는'
+        // document.getElementById('one').innerHTML = '신짱구'
+        // document.getElementById('two').innerHTML = '신짱구'
+        // document.getElementById('one').innerText = '좋아하는 캐릭터는 ???'
+        // document.getElementById('one').innerText = '닉 와일드'
+        // document.getElementById('two').innerHTML = '<img src="https://mblogthumb-phinf.pstatic.net/20160314_176/siriusdhk_1457887960958fgOKu_JPEG/Zootopia-Nick-Wilde.jpg?type=w2">'
+
+        var color = ['red', 'orange', 'yellow', 'green', 'skyblue', 'blue', 'purple']
+        var i = 0;
+
+        function buttonChg() {
+            i++;
+            if (i >= color.length) {
+                i = 0;
+            }
+            document.body.style.color = color[i];
+        }
+        var unorder = document.querySelector('a')
+        unorder.getAttribute('href', 'https://www.youtube.com/')
+
+        function fontChg() {
+            document.querySelector('ul').classList.toggle('fts')
+        }
+    </script>
+</body>
+
+</html>
