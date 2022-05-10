@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loform</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="form">
+        <form id="login" method="get">
+            아이디 : <input type="text" name="id" placeholder="아이디"><br>
+            비밀번호 : <input type="password" name="pw" placeholder="비밀번호">
+            <input type="submit" value="로그인">
+        </form>
+    </div>
+    <div id="empty">
+
+    </div>
+
+    <script>
+        document.getElementById('login').onsubmit = function () {
+            var inputId = this.id.value
+            var inputPw = this.pw.value
+
+            console.log(inputId)
+            console.log(inputPw)
+
+            var adminId = 'admin';
+            var adminPw = '1234';
+
+            if (adminId == inputId) {
+                if (adminPw == inputPw) {
+                    var p = document.querySelector('#empty')
+                    p.textContent = inputId + ' 님, 로그인 성공'
+                } else {
+                    var p = document.querySelector('#empty')
+                    p.textContent = inputId + ' 님, 비밀번호가 틀렸습니다.'
+                }
+            } else {
+                var p = document.querySelector('#empty')
+                p.textContent = inputId + '는 없는 ID입니다.'
+            }
+
+            return false;
+        }
+    </script>
+</body>
+
+</html>
