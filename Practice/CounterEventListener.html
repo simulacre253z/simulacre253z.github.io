@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CounterEL</title>
+    <style>
+        body {
+            background-color: beige;
+        }
+
+        #num {
+            display: flex;
+            justify-content: center;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        #btn {
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+        }
+
+        .bgch {
+            background-color: indianred;
+        }
+    </style>
+</head>
+
+<body class="bgcla">
+    <div id="num">0</div>
+    <div id="btn">
+        <button id="increase">+1 증가</button>
+        <button onclick="dec()" class="dec">-1 감소</button>
+        <button onclick="res()" class="res">Reset 초기화</button>
+        <button onclick="bgc()">BG Color</button>
+        <button onclick="bgbtn()">BG Color 2</button>
+    </div>
+
+    <script>
+        var num = document.querySelector('#num')
+        var col = ['red', 'yellow', 'green', 'blue', 'white']
+        var i = 0;
+
+        increase.addEventListener('click', function() {
+            num.innerText = ++num.innerText
+        })
+
+        function dec() {
+            if (num.innerText <= 0) {
+                num.innerText = 0
+            } else {
+                num.innerText = --num.innerText
+            }
+        }
+
+        function res() {
+            num.innerText = 0
+        }
+
+        function bgc() {
+            i++;
+            if (i >= col.length) {
+                i = 0;
+            }
+            document.body.style.backgroundColor = col[i];
+        }
+
+        function bgbtn() {
+            var bgcz = document.querySelector('.bgcla')
+            bgcz.classList.toggle('bgch')
+        }
+    </script>
+</body>
+
+</html>
